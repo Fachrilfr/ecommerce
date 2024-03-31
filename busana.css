@@ -1,0 +1,230 @@
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+.navbar-brand {
+    font-weight: 500;
+    color: #112D4E;
+    font-size: 20px;
+    transition: 0.3s color;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, nav-link.active {
+    color: #000;
+}
+
+.navbar-brand img {
+    height: 60px;
+    max-height: 100%;
+    width: auto;
+    border-radius: 50%;
+    border: 2px solid rgb(183, 0, 255);
+    margin-right: 10px;
+}
+.dropdown-menu {
+    background-color: #fff; /* Ganti dengan warna latar belakang yang diinginkan */
+    padding: 0.5rem; /* Atur padding sesuai kebutuhan */
+}
+
+.dropdown-item {
+    color: #666777; /* Ganti dengan warna teks yang diinginkan */
+    font-weight: 500; /* Ganti dengan gaya font yang diinginkan */
+    position: relative;
+}
+
+.dropdown-item:hover {
+    color: #000; /* Ganti dengan warna teks yang diinginkan saat dihover */
+}
+
+
+/* Content */
+body {
+    background-color: #C7C8CC;
+}
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+a {
+    text-decoration: none;
+}
+.busana {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 50px; /* Tambahkan margin atas 120px dan margin bawah 50px */
+    position: relative;
+    text-align: center;
+    
+}
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+.content:hover {
+    box-shadow: 0 30px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: scale(1.05); /* Ubah ukuran menjadi 105% dari ukuran aslinya saat dihover */
+
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+p {
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+h6 {
+    font-size: 20px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+
+.busana ul {
+    list-style: none;
+    display: inline-block; /* Mengubah perilaku menjadi inline block */
+    padding: 0; /* Hapus padding */
+    text-align: center; /* Penempatan horizontal isi list ke tengah */
+}
+
+.busana li {
+    padding-top: 5px;
+    display: inline-block; /* Mengatur elemen list (bintang-bintang) menjadi inline block */
+
+}
+
+.fa{
+    font-size: 18px;
+    transition: .4s;
+    margin: 3px;
+}
+.checked{
+    color: #ff9f43;
+}
+
+.fa:hover{
+    transform: scale(1.3);
+    transition: .6s;
+}
+
+.content button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.buy  {
+    background: #0b0b0b;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.divider {
+    border-top: 5px solid black; /* Atur warna, ketebalan, dan gaya garis sesuai kebutuhan */
+    width: 30%; /* Atur lebar divider */
+    margin: auto; /* Membuat divider berada di tengah secara horizontal */
+    margin-top: 20px; /* Jarak antara judul dan divider */
+    margin-bottom: 20px; /* Jarak antara divider dan konten berikutnya */
+    border-radius: 5px;
+}
+
+footer {
+	padding:10px 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1200px) {
+    .content {
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 45%;
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+    .content {
+        width: 100%;
+    }
+}
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: #112D4E;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+    
+}

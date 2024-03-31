@@ -1,0 +1,128 @@
+body {
+    background-color: #C7C8CC;
+}
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+.navbar-brand {
+    font-weight: 500;
+    color: #112D4E;
+    font-size: 20px;
+    transition: 0.3s color;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, nav-link.active {
+    color: #000;
+}
+
+.navbar-brand img {
+    height: 60px;
+    max-height: 100%;
+    width: auto;
+    border-radius: 50%;
+    border: 2px solid rgb(183, 0, 255);
+    margin-right: 10px;
+}
+.dropdown-menu {
+    background-color: #fff; /* Ganti dengan warna latar belakang yang diinginkan */
+    padding: 0.5rem; /* Atur padding sesuai kebutuhan */
+}
+
+.dropdown-item {
+    color: #666777; /* Ganti dengan warna teks yang diinginkan */
+    font-weight: 500; /* Ganti dengan gaya font yang diinginkan */
+    position: relative;
+}
+
+.dropdown-item:hover {
+    color: #000; /* Ganti dengan warna teks yang diinginkan saat dihover */
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: #112D4E;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+    h1 {
+        font-size: 24px; /* Ukuran judul yang lebih kecil untuk layar kecil */
+    }
+
+    .divider {
+        width: 50%; /* Lebar divider yang lebih kecil untuk layar kecil */
+    }
+
+    /* Atur lebar video YouTube untuk layar kecil */
+    .youtube-video {
+        max-width: 100%; /* Lebar maksimum 100% */
+        height: auto; /* Tinggi otomatis */
+    }
+    
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.divider {
+    border-top: 5px solid black; /* Atur warna, ketebalan, dan gaya garis sesuai kebutuhan */
+    width: 30%; /* Atur lebar divider */
+    margin: auto; /* Membuat divider berada di tengah secara horizontal */
+    margin-top: 20px; /* Jarak antara judul dan divider */
+    margin-bottom: 20px; /* Jarak antara divider dan konten berikutnya */
+    border-radius: 5px;
+}
+
+/* Video Youtube */
+.youtube-video {
+    width: 560px;
+    height: 315px;
+    border: 2px solid #212526; /* Atur border untuk video */
+    border-radius: 10px; /* Atur sudut border-radius */
+    margin-top: 20px; /* Atur margin atas */
+    margin-bottom: 20px; /* Atur margin bawah */
+}
+
+footer {
+	padding:10px 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+
