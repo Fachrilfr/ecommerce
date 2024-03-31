@@ -89,9 +89,12 @@ body {
     .youtube-video {
         max-width: 100%; /* Lebar maksimum 100% */
         height: auto; /* Tinggi otomatis */
+        width: 100%; /* Mengatur lebar video menjadi 100% */
+        max-width: 560px; /* Atur lebar maksimum video */
     }
     
 }
+
 
 
 
@@ -111,12 +114,17 @@ h1 {
 
 /* Video Youtube */
 .youtube-video {
-    width: 560px;
-    height: 315px;
     border: 2px solid #212526; /* Atur border untuk video */
-    border-radius: 10px; /* Atur sudut border-radius */
+    max-width: 100%;
+    overflow: hidden;
     margin-top: 20px; /* Atur margin atas */
     margin-bottom: 20px; /* Atur margin bawah */
+    border-radius: 10px; /* Atur sudut border-radius */
+}
+
+.youtube-video iframe {
+    width: 100%;
+    height: auto;
 }
 
 footer {
